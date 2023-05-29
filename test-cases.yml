@@ -120,13 +120,13 @@
     Пользователь вошел в свой аккаунт
   test-data: |
     - Наличие аккаунта на Github/Личного кабинета на сайте https://codebattle.hexlet.io/ 
-  steps: 
+  steps:
     - Кликаем кнопку "Создать игру"
     - В открывающемся окне в поле выбираем Уровень 1
     - Выбираем тип игры: с ботом
     - Выбираем задачу: rect_area
     - Кликаем "Создать битву"
-    - В поле пишем код: "const _ = require("lodash");"
+    - В поле пишем код: #"const _ = require("lodash");"
   expected-result: |
     Код записан корректно.
 
@@ -153,13 +153,13 @@
     Пользователь вошел в свой аккаунт
   test-data: |
     - Наличие аккаунта на Github/Личного кабинета на сайте https://codebattle.hexlet.io/ 
-  steps: |
+  steps:
     - Кликаем кнопку "Создать игру"
     - В открывающемся окне в поле выбираем Уровень 1
     - Выбираем тип игры: с ботом
     - Выбираем задачу: rect_area
     - Кликаем "Создать битву"
-    - В поле пишем код: "const _ = require("lodash");"
+    - В поле пишем код: #"const _ = require("lodash");"
     - Кликаем "проверить решение"
   expected-result: |
     Пользователь видит сообщение "Решение неверно"
@@ -172,21 +172,21 @@
     Пользователь вошел в свой аккаунт
   test-data: |
     - Наличие аккаунта на Github/Личного кабинета на сайте https://codebattle.hexlet.io/ 
-  steps: |
+  steps:
     - Кликаем кнопку "Создать игру"
     - В открывающемся окне в поле выбираем Уровень 1
     - Выбираем тип игры: с ботом
     - Выбираем задачу: rect_area
     - Кликаем "Создать битву"
     - В поле пишем код: 
-    "const _ = require("lodash");
-     const R = require("rambda");
+    #const _ = require("lodash");
+    #const R = require("rambda");
 
-     const solution = (width, length) => {
-     return width * length;
-     };
+    #const solution = (width, length) => {
+    #return width * length;
+    #};
 
-     module.exports = solution;"
+    # module.exports = solution;"
     - Кликаем "проверить решение"
   expected-result: |
     Пользователь видит сообщение "Решение верно"
