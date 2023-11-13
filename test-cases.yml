@@ -180,15 +180,15 @@
     Открыта страница игры "rect_area"
   test-data: |
     Проверка сброса кода до исходного шаблона
-  steps: |
-    Вводим код :
-    const _ = require("lodash");
-    const R = require("rambda");
-    const solution = (width, length) => {
-    return width * length;
-    };
-    module.exports = solution
-    Нажимаем кнопку "Reset editor" 
+  steps: 
+    - Вводим код :
+    #const _ = require("lodash");
+    #const R = require("rambda");
+    #const solution = (width, length) => {
+    #return width * length;
+    #};
+    #module.exports = solution
+    - Нажимаем кнопку "Reset editor" 
   expected-result: |
     Должно сброситься до исходного шаблона
 
@@ -200,15 +200,15 @@
     Открыта страница игры "rect_area"
   test-data: |
     Проверка решения
-  steps: |
-    Вводим код
-    const _ = require("lodash");
-    const R = require("rambda");
-    const solution = (width, length) => {
-    return width * length;
-    };
-    module.exports = solution;
-    Нажимаем кнопку "Check solution"
+  steps: 
+    - Вводим код
+    #const _ = require("lodash");
+    #const R = require("rambda");
+    #const solution = (width, length) => {
+    #return width * length;
+    #};
+    #module.exports = solution;
+    - Нажимаем кнопку "Check solution"
   expected-result: |
     Пользователю будет показана работа его кода во вкладке "OUTPUT"
 
