@@ -181,7 +181,7 @@
   test-data: |
     Проверка сброса кода до исходного шаблона
   steps: 
-    - Вводим код :
+    - Вводим код 
     #const _ = require("lodash");
     #const R = require("rambda");
     #const solution = (width, length) => {
